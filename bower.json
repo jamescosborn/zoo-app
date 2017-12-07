@@ -3,7 +3,7 @@
   "description": "",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/jamescosborn/angular2-to-do-list",
   "ignore": [
     "**/.*",
     "node_modules",
