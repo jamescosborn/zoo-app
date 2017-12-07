@@ -10,8 +10,15 @@ import { Task } from './task.model';
     <option value="incompleteTasks" selected="selected">Incomplete Tasks</option>
   </select>
 
+  <select (change)="onSwap($event.target.value)">
+    <option value="allPriorities" selected="selected">All Priorities</option>
+    <option value="priorityOne">Priority 1</option>
+    <option value="priorityTwo">Priority 2</option>
+    <option value="threatLevelMidnight">Priority 3</option>
+  </select>
+
   <ul>
-    <li (click)="isDone(currentTask)" *ngFor="let currentTask of childTaskList | completeness:filterByCompleteness">{{currentTask.description}} {{currentTask.priority}}
+    <li (click)="isDone(currentTask)" *ngFor="let currentTask of childTaskList | completeness:filterByCompleteness | priority:filterByPriority">{{currentTask.description}} {{currentTask.priority}}
       <input *ngIf="currentTask.done === true" type="checkbox" checked (click)="toggleDone(currentTask, false)"/>
       <input *ngIf="currentTask.done === false" type="checkbox" (click)="toggleDone(currentTask, true)"/>
       <button (click)="editButtonHasBeenClicked(currentTask)">Edit!</button>
@@ -25,6 +32,7 @@ export class TaskListComponent {
   @Output() clickSender = new EventEmitter();
 
   filterByCompleteness: string = "incompleteTasks";
+  filterByPriority: number = 1;
 
   editButtonHasBeenClicked(taskToEdit: Task) {
     this.clickSender.emit(taskToEdit);
@@ -50,6 +58,10 @@ export class TaskListComponent {
 
   onChange(optionFromMenu) {
     this.filterByCompleteness = optionFromMenu;
+  }
+
+  onSwap(optionFromMenu) {
+    this.filterByPriority = optionFromMenu;
   }
 
   toggleDone(clickedTask: Task, setCompleteness: boolean) {
