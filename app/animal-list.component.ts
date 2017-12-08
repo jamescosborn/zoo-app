@@ -50,17 +50,6 @@ export class AnimalListComponent {
     this.clickSender.emit(animalToEdit);
   }
 
-
-  // priorityColor(currentAnimal) {
-  //   if (currentAnimal.priority === 3) {
-  //     return "bg-danger";
-  //   } else if (currentAnimal.priority === 2) {
-  //     return "bg-warning";
-  //   } else {
-  //     return "bg-info";
-  //   }
-  // }
-
   viewAnimal(clickedAnimal){
   this.selectedAnimal = clickedAnimal;
   }
