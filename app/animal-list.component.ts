@@ -29,6 +29,8 @@ import { Animal } from './animal.model';
       <h4>Likes: {{selectedAnimal.likes}}</h4>
       <h4>Dislikes: {{selectedAnimal.dislikes}}</h4>
       <h3>Edit Animal</h3>
+      <label>Edit Name:</label>
+      <input [(ngModel)]="selectedAnimal.name">
       <label>Edit Age:</label>
       <input [(ngModel)]="selectedAnimal.age">
       <label>Edit Number of Care Takers:</label>
