@@ -35,7 +35,6 @@ import { Animal } from './animal.model';
       <input [(ngModel)]="selectedAnimal.age">
       <label>Edit Number of Care Takers:</label>
       <input [(ngModel)]="selectedAnimal.noc">
-      <button (click)="doneButtonClicked()">Done</button>
     </div>
   `
 })
