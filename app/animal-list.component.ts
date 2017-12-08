@@ -12,16 +12,23 @@ import { Animal } from './animal.model';
   template: `
 
   <ul>
-    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.description}}</li>
+    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.name}}</li>
   </ul>
   <div class="animal-wrapper" *ngIf="selectedAnimal">
       <h3>Edit Animal</h3>
-      <label>Edit Beer Name:</label>
-      <input [(ngModel)]="selectedAnimal.description">
-      <input [(ngModel)]="selectedAnimal.priority">
+      <label>Edit Animal Name:</label>
+      <input [(ngModel)]="selectedAnimal.age">
+      <input [(ngModel)]="selectedAnimal.noc">
       <!--<button (click)="editKegAttribute(selectedBeer.name)">Edit Keg</button>--->
-      <h4>{{selectedAnimal.description}}</h4>
-      <h4>{{selectedAnimal.priority}}</h4>
+      <h4>{{selectedAnimal.name}}</h4>
+      <h4>{{selectedAnimal.species}}</h4>
+      <h4>{{selectedAnimal.age}}</h4>
+      <h4>{{selectedAnimal.diet}}</h4>
+      <h4>{{selectedAnimal.zooloc}}</h4>
+      <h4>{{selectedAnimal.sex}}</h4>
+      <h4>{{selectedAnimal.noc}}</h4>
+      <h4>{{selectedAnimal.likes}}</h4>
+      <h4>{{selectedAnimal.dislikes}}</h4>
     </div>
   `
 })
@@ -37,13 +44,6 @@ export class AnimalListComponent {
     this.clickSender.emit(animalToEdit);
   }
 
-  isDone(clickedAnimal: Animal) {
-    if(clickedAnimal.done === true) {
-      alert("This animal is done!");
-    } else {
-      alert("This animal is not done. Better get to work!")
-    }
-  }
 
   // priorityColor(currentAnimal) {
   //   if (currentAnimal.priority === 3) {
@@ -68,7 +68,4 @@ export class AnimalListComponent {
     this.filterByPriority = optionFromMenu;
   }
 
-  toggleDone(clickedAnimal: Animal, setCompleteness: boolean) {
-    clickedAnimal.done = setCompleteness;
-  }
 }

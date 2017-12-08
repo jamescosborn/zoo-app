@@ -20,9 +20,7 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-    new Animal("Marty", 3),
-    new Animal('Leon', 2),
-    new Animal('Suzy Q', 2)
+    new Animal("Marty", "Walrus", 12, "Fish", "Grizzly Grotto", "Male", "Barking", "Rude people"),
   ];
 
   editAnimal(clickedAnimal) {

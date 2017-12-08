@@ -5,8 +5,6 @@ import { FormsModule }  from '@angular/forms';
 import { AnimalListComponent } from './animal-list.component';
 import { EditAnimalComponent } from './edit-animal.component';
 import { NewAnimalComponent } from './new-animal.component';
-import { CompletenessPipe } from './completeness.pipe';
-import { PriorityPipe } from './priority.pipe';
 
 @NgModule({
   imports: [ BrowserModule,
@@ -14,9 +12,7 @@ import { PriorityPipe } from './priority.pipe';
   declarations: [ AppComponent,
                   AnimalListComponent,
                   EditAnimalComponent,
-                  NewAnimalComponent,
-                  CompletenessPipe,
-                  PriorityPipe ],
+                  NewAnimalComponent],
   bootstrap:    [ AppComponent ]
 })
 
