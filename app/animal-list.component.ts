@@ -12,23 +12,24 @@ import { Animal } from './animal.model';
   template: `
 
   <ul>
-    <li (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.name}}</li>
+    <h3 (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.name}}</h3>
   </ul>
-  <div class="animal-wrapper" *ngIf="selectedAnimal">
+  <div class="well" *ngIf="selectedAnimal">
+      <h4>Name: {{selectedAnimal.name}}</h4>
+      <h4>Species: {{selectedAnimal.species}}</h4>
+      <h4>Age: {{selectedAnimal.age}}</h4>
+      <h4>Diet: {{selectedAnimal.diet}}</h4>
+      <h4>Zoo Location: {{selectedAnimal.zooloc}}</h4>
+      <h4>Sex: {{selectedAnimal.sex}}</h4>
+      <h4>Number of Caretakers: {{selectedAnimal.noc}}</h4>
+      <h4>Likes: {{selectedAnimal.likes}}</h4>
+      <h4>Dislikes: {{selectedAnimal.dislikes}}</h4>
+
       <h3>Edit Animal</h3>
-      <label>Edit Animal Name:</label>
+      <label>Edit Age:</label>
       <input [(ngModel)]="selectedAnimal.age">
+      <label>Edit Number of Care Takers:</label>
       <input [(ngModel)]="selectedAnimal.noc">
-      <!--<button (click)="editKegAttribute(selectedBeer.name)">Edit Keg</button>--->
-      <h4>{{selectedAnimal.name}}</h4>
-      <h4>{{selectedAnimal.species}}</h4>
-      <h4>{{selectedAnimal.age}}</h4>
-      <h4>{{selectedAnimal.diet}}</h4>
-      <h4>{{selectedAnimal.zooloc}}</h4>
-      <h4>{{selectedAnimal.sex}}</h4>
-      <h4>{{selectedAnimal.noc}}</h4>
-      <h4>{{selectedAnimal.likes}}</h4>
-      <h4>{{selectedAnimal.dislikes}}</h4>
     </div>
   `
 })
