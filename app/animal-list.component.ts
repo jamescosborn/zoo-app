@@ -11,8 +11,12 @@ import { Animal } from './animal.model';
   selector: 'animal-list',
   template: `
 
+  <select (change)="onChange($event.target.value)">
+    <option value="allAnimals" selected="selected">All Animals</option>
+    <option value="youngAnimals">Young Animals</option>
+  </select>
   <ul>
-    <h3 (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList">{{currentAnimal.name}}</h3>
+    <h3 (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | youngness:filterByYoungness">{{currentAnimal.name}}</h3>
   </ul>
   <div class="well" *ngIf="selectedAnimal">
       <h4>Name: {{selectedAnimal.name}}</h4>
@@ -24,12 +28,6 @@ import { Animal } from './animal.model';
       <h4>Number of Caretakers: {{selectedAnimal.noc}}</h4>
       <h4>Likes: {{selectedAnimal.likes}}</h4>
       <h4>Dislikes: {{selectedAnimal.dislikes}}</h4>
-
-      <h3>Edit Animal</h3>
-      <label>Edit Age:</label>
-      <input [(ngModel)]="selectedAnimal.age">
-      <label>Edit Number of Care Takers:</label>
-      <input [(ngModel)]="selectedAnimal.noc">
     </div>
   `
 })
@@ -38,8 +36,7 @@ export class AnimalListComponent {
   @Input() childAnimalList: Animal[];
   @Output() clickSender = new EventEmitter();
 
-  filterByCompleteness: string = "incompleteAnimals";
-  filterByPriority: number = 1;
+  filterByYoungness: string = "allAnimals";
 
   editButtonHasBeenClicked(animalToEdit: Animal) {
     this.clickSender.emit(animalToEdit);
@@ -62,11 +59,8 @@ export class AnimalListComponent {
   selectedAnimal = null;
 
   onChange(optionFromMenu) {
-    this.filterByCompleteness = optionFromMenu;
+    this.filterByYoungness = optionFromMenu;
   }
 
-  onSwap(optionFromMenu) {
-    this.filterByPriority = optionFromMenu;
-  }
 
 }

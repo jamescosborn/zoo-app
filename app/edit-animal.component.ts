@@ -5,17 +5,11 @@ import { Animal } from './animal.model';
   selector: 'edit-animal',
   template: `
     <div *ngIf="childSelectedAnimal">
-      <h3>{{childSelectedAnimal.description}}</h3>
-      <p>Animal Complete? {{childSelectedAnimal.done}}</p>
-      <hr>
       <h3>Edit Animal</h3>
-      <label>Enter Animal Description:</label>
-      <input [(ngModel)]="childSelectedAnimal.description">
-      <label>Enter Animal Priority (1-3):</label>
-      <br>
-      <input type="radio" [(ngModel)]="childSelectedAnimal.priority" [value]="1">1 (Low Priority)<br>
-      <input type="radio" [(ngModel)]="childSelectedAnimal.priority" [value]="2">2 (Medium Priority)<br>
-      <input type="radio" [(ngModel)]="childSelectedAnimal.priority" [value]="3">3 (High Priority)
+      <label>Edit Age:</label>
+      <input [(ngModel)]="selectedAnimal.age">
+      <label>Edit Number of Care Takers:</label>
+      <input [(ngModel)]="selectedAnimal.noc">
       <button (click)="doneButtonClicked()">Done</button>
    </div>
   `

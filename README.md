@@ -43,7 +43,7 @@ Likes: "Barking"
 Dislikes: "Rude people"
 ```
 
-##### Description:  User is able to edit animal name, age, or caretakers
+##### Description:  User is able to edit animal age, or number of caretakers
 Input:  `Edit Marty's Age`
 Output: `Age: 12>13`  
 
@@ -56,7 +56,7 @@ Input:  `Filter: Mature animals > 2 years old`
 Output:  `Marty, other mature animals...`
 
 ##### Description:  User is able to add a new animal to the animal list via a form
-Input:  `Add: Henrietta the Seal`
+Input:  `Add: Henrietta the Seel`
 Output:  `Henrietta appears in list`
 
 ## License Information

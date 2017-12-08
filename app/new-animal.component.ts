@@ -21,7 +21,7 @@ import { Animal } from './animal.model';
       <input type="text" #animalLikes><br>
       <label for="animalDislikes">Dislikes: </label>
       <input type="text" #animalDislikes><br>
-      <button (click)="submitForm(animalName.value, animalSpecies.value, animalAge.value, animalSpecies.value, animalDiet.value, animalZooloc.value, animalSex.value, animalLikes.value, animalDislikes.value)">Add</button>
+      <button (click)="submitForm(animalName.value, animalSpecies.value, animalAge.value, animalDiet.value, animalZooloc.value, animalSex.value, animalLikes.value, animalDislikes.value)">Add</button>
   `
 })
 
