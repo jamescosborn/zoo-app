@@ -1,5 +1,5 @@
 {
-  "name": "angular2-to-do",
+  "name": "zoo-app",
   "description": "",
   "main": "",
   "license": "MIT",
@@ -13,5 +13,8 @@
   ],
   "dependencies": {
     "bootstrap": "^3.3.7"
-  }
+  },
+  "authors": [
+    "James Osborn <jamescarlosborn@gmail.com>"
+  ]
 }

@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from '@angular/core';
-import {Task} from './task.model';
+import {Animal} from './animal.model';
 
 @Pipe({
   name: "priority",
@@ -8,8 +8,8 @@ import {Task} from './task.model';
 
 
 export class PriorityPipe implements PipeTransform {
-  transform(input: Task[], desiredPriority) {
-    var output: Task[] = [];
+  transform(input: Animal[], desiredPriority) {
+    var output: Animal[] = [];
     if(desiredPriority === "priorityOne") {
     for (var i = 0; i < input.length; i++) {
       if (input[i].priority === 1) {

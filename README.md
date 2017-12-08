@@ -21,7 +21,6 @@ $ gulp serve
 ## Technologies Used
 
 
-## License Information
 
 ## Specs
 
@@ -29,17 +28,19 @@ $ gulp serve
 Input:  `View website`  
 Output:  `Display animal list`
 
-##### Description: Clicking an animal name from the list will display an animal 7 unique details, including name, species, age, sex, diet, zoo location, and number of needed caretakers
+##### Description: Clicking an animal name from the list will display an animal 9 unique details, including name, species, age, diet, zoo location, number of needed caretakers, sex, likes, and dislikes.
 Input:  `Click Marty the Walrus`  
 Output:  
 ```
-Name: Marty  
-Species: Walrus  
+Name: "Marty"  
+Species: "Walrus"  
 Age: 12  
-Sex: Male  
-Diet: Fish  
-Zoo Location: Grizzly Grotto  
+Diet: "Fish"  
+Zoo Location: "Grizzly Grotto"  
 Number of Caretakers: 3
+Sex: "Male"  
+Likes: "Barking"
+Dislikes: "Rude people"
 ```
 
 ##### Description:  User is able to edit animal name, age, or caretakers
@@ -57,3 +58,5 @@ Output:  `Marty, other mature animals...`
 ##### Description:  User is able to add a new animal to the animal list via a form
 Input:  `Add: Henrietta the Seal`
 Output:  `Henrietta appears in list`
+
+## License Information
