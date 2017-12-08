@@ -18,7 +18,7 @@ import { Animal } from './animal.model';
   <ul>
     <h3 (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | youngness:filterByYoungness">{{currentAnimal.name}}</h3>
   </ul>
-  <div class="well" *ngIf="selectedAnimal">
+    <div class="well" *ngIf="selectedAnimal">
       <h4>Name: {{selectedAnimal.name}}</h4>
       <h4>Species: {{selectedAnimal.species}}</h4>
       <h4>Age: {{selectedAnimal.age}}</h4>
@@ -28,6 +28,12 @@ import { Animal } from './animal.model';
       <h4>Number of Caretakers: {{selectedAnimal.noc}}</h4>
       <h4>Likes: {{selectedAnimal.likes}}</h4>
       <h4>Dislikes: {{selectedAnimal.dislikes}}</h4>
+      <h3>Edit Animal</h3>
+      <label>Edit Age:</label>
+      <input [(ngModel)]="selectedAnimal.age">
+      <label>Edit Number of Care Takers:</label>
+      <input [(ngModel)]="selectedAnimal.noc">
+      <button (click)="doneButtonClicked()">Done</button>
     </div>
   `
 })

@@ -21,7 +21,7 @@ export class YoungnessPipe implements PipeTransform {
     return output;
   } else if (desiredYoungness === "allAnimals") {
     for (var i = 0; i < input.length; i++) {
-      if (input[i].age > 11) {
+      if (input[i].age > 0) {
         output.push(input[i]);
       }
     }
