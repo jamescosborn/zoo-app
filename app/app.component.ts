@@ -20,7 +20,7 @@ export class AppComponent {
   selectedAnimal = null;
 
   masterAnimalList: Animal[] = [
-    new Animal("Marty", "Renegade Walrus", 12, "Fish, Sweet Tarts, Cinnabons", "Grizzly Grotto", "Male", 3, "Barking", "Flash photography"),
+    new Animal("Marty", "Renegade Walrus", 12, "Fish, Sweet Tarts, Cinnabons", "Roaming the Zoo", "Male", 3, "Barking", "Flash photography"),
     new Animal("Henrietta", "Seal", 1, "Fish", "Grizzly Grotto", "Female", 3, "Doing tricks", "Walruses/Walrie"),
     new Animal("Shadowfax", "Mini-horse", 1, "Carrots", "Enchanted Stables", "Male", 3, "Nose Scratches", "Leprechauns"),
   ];
