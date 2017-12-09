@@ -96,7 +96,7 @@ Sign Off for Kelly:
 
 So, I've been working here long enough to see that this zoo is in trouble. We only have 3 animals, we're located under an overpass in a sketchy part of town, and maybe a dozen people visit us every day.
 
-Here is my proposal to turn this place around. We slightly tweak our theme in a way to bring in more paying visitors, and then we charge $80 a ticket instead of $20.
+Here is my proposal to turn this place around. We switch up our theme in a way to bring in more paying visitors, and then we charge $80 a ticket instead of $20.
 
 We need to play to our strengths. We're a spooky petting zoo under a highway overpass. Let's tweak this whole petting zoo thing and become a "Death Metal Petting Zoo."
 
@@ -104,9 +104,9 @@ Here me out, Kelsters. The Kel-meister.
 
 Visitors will no longer be paying to safely watch and pet animals in enclosures. Instead, they will pay 4x more to be hunted by those very same animals. That's right, the animals hunt the humans, and the humans pay for it.
 
-Picture it: you enter the zoo, and no staff are in sight. Then you see him--Marty is there, watching you, in the middle of the thoroughfare. He starts barreling towards you, barking and feirce. The visitors will be mesmerized, thrilled, ecstatic! It's like riding a roller coaster, but better!
+Picture it: you enter the zoo, and no staff are in sight. Then you see him. Marty is there, watching you, in the middle of the thoroughfare. He starts barreling towards you, barking and fierce. The visitors will be mesmerized, thrilled, ecstatic! It'll be like riding a roller coaster, but better!
 
-Let me know if this all sounds acceptable. I pretty much know you will say yes to this amazing plan, so I took the liberty of liberating Marty from his pen this morning. He seems pretty stoked to be free to roam throughout the park. I also shared with him 4 rolls of Sweet Tarts, 2 boxes of Cinnabons, and a couple Rockstar energy drinks, so he is pretty amped up. Just a heads up!  
+Let me know if this all sounds acceptable. I pretty much know you will say yes to this amazing plan, so I took the liberty of letting Marty out from his enclosure this morning. He seems pretty stoked to be free to roam throughout the park. I also shared with him 4 rolls of Sweet Tarts, 2 boxes of Cinnabons, and a couple Rockstar energy drinks, so he is really amped. Just a heads up!  
 
 Maybe for Phase 3, I can hook up the Twitter API to this website so we can tweet whenever Marty gets a KO, then make a list of those tweets on the website. Lots of potential here, I know, and I've got plenty more ideas like this! 
 
