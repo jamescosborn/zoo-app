@@ -14,13 +14,11 @@ The app will display a list of all the zoo animal names. Clicking on an animal's
 
 2. Navigate to the project directory in the command prompt  
 
-*To view code:*  
-3. Open with your favorite text editor     
+3. Open with your favorite text editor  *(to view code)*  
 
 OR  
 
-*To view app:*  
-4. Use the following commands to launch the site in a browser (Chrome)   
+4. Use the following commands to launch the site in a browser *(to view app in browser, Chrome)*     
 
 ```
 TO START:
