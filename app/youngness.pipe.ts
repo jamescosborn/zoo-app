@@ -19,9 +19,9 @@ export class YoungnessPipe implements PipeTransform {
       }
     }
     return output;
-  } else if (desiredYoungness === "allAnimals") {
+  } else if (desiredYoungness === "olderAnimals") {
     for (var i = 0; i < input.length; i++) {
-      if (input[i].age > 0) {
+      if (input[i].age > 2) {
         output.push(input[i]);
       }
     }

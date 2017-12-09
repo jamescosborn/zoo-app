@@ -14,6 +14,7 @@ import { Animal } from './animal.model';
   <select (change)="onChange($event.target.value)">
     <option value="allAnimals" selected="selected">All Animals</option>
     <option value="youngAnimals">Young Animals</option>
+    <option value="olderAnimals">Older Animals</option>
   </select>
   <ul>
     <h3 (click)="viewAnimal(currentAnimal)" *ngFor="let currentAnimal of childAnimalList | youngness:filterByYoungness">{{currentAnimal.name}}</h3>
