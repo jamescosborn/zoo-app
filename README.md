@@ -6,7 +6,7 @@ by James Osborn
 
 Kelly Turner, master walrus trainer, approached me about building a new animal tracking app for the zoo. I'm glad to help out. Anything for the walruses. Or is it walrie?
 
-The app will display a list of all zoo animal's names. Clicking on an animal's name will bring up detailed info and a form to edit several of the properties. Additionally, there is a form to add new animals to the zoo, and a filter to find the youngest animals under 2 years old.
+The app will display a list of all zoo animal's names. Clicking on an animal's name will bring up detailed info and a form to edit several of the properties. Additionally, there is a form to add new animals to the zoo, and a filter to find the youngest animals under 2 years old, and older animals at 2 years old or more.
 
 ## Installation / Setup Instructions
 
