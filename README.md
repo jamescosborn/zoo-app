@@ -18,7 +18,7 @@ The app will display a list of all the zoo animal names. Clicking on an animal's
 
 OR  
 
-4. Use the following commands to launch the site in a browser *(to view app in browser, Chrome)*     
+4. Use the following commands to launch the site in a browser *(Chrome)*     
 
 ```
 TO START:
